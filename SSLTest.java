@@ -48,9 +48,9 @@ public class SSLTest {
 
 		       Socket s = SSLSocketFactory.getDefault()
 			       .createSocket(Host, Port);
-		       System.out.println(Host + ":" + Port + " looks okay to java!");
 		       OutputStream out = s.getOutputStream();
 		       out.write("I love you!".getBytes("UTF8"));
+		       System.out.println(Host + ":" + Port + " looks okay to java!");
 		       out.close();
 		       s.close();
 	}
